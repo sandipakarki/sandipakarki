@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a; /* Dark but soft */
+  color: #e6e6fa; /* Pale lavender */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Full-page layout */
+header,
+main,
+footer {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: #2a2a2a; /* Softer dark gray */
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+  color: #d8bfd8; /* Pale orchid */
+}
+
+header p {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #b0c4de; /* Light steel blue */
+}
+
+/* Sections */
+section {
+  background: #2a2a2a; /* Softer dark gray */
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* About Section */
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #d8bfd8; /* Pale orchid */
+}
+
+/* Skills Section */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.skills-container span {
+  background: #6c757d; /* Pale slate gray */
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f8f9fa; /* Soft white */
+}
+
+/* Contact Section */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.contact-box {
+  display: block;
+  padding: 12px 20px;
+  border: 2px solid #b0c4de; /* Light steel blue outline */
+  border-radius: 8px;
+  color: #b0c4de;
+  text-decoration: none;
+  font-size: 18px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.contact-box:hover {
+  background: #3a3a3a;
+}
+
+footer {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #b0c4de;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    padding: 30px 15px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .skills-container span {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .contact-box {
+    font-size: 16px;
+    padding: 10px;
+    width: 90%;
+  }
+}
